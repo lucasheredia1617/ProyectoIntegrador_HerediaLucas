@@ -4,8 +4,9 @@
  */
 package com.portfolio.lucasheredia.Service;
 
-import com.portfolio.lucasheredia.Security.Entity.Educacion;
-import com.portfolio.lucasheredia.Security.Repository.REducacion;
+
+import com.portfolio.lucasheredia.Entity.Educacion;
+import com.portfolio.lucasheredia.Repository.REducacion;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;

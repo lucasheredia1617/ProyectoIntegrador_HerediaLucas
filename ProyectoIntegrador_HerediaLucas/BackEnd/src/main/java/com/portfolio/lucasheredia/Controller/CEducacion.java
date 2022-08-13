@@ -5,8 +5,8 @@
 package com.portfolio.lucasheredia.Controller;
 
 import com.portfolio.lucasheredia.Dto.dtoEducacion;
+import com.portfolio.lucasheredia.Entity.Educacion;
 import com.portfolio.lucasheredia.Security.Controller.Mensaje;
-import com.portfolio.lucasheredia.Security.Entity.Educacion;
 import com.portfolio.lucasheredia.Service.Seducacion;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
@@ -77,7 +77,7 @@ public class CEducacion {
         if(!sEducacion.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
         }
-        if(sEducacion.existsByNombreE(dtoeducacion.getNombreE()) & sEducacion.getByNombreE(dtoeducacion.getNombreE()).get().getId() !=id){
+        if(sEducacion.existsByNombreE(dtoeducacion.getNombreE()) && sEducacion.getByNombreE(dtoeducacion.getNombreE()).get().getId() !=id){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
         if(StringUtils.isBlank(dtoeducacion.getNombreE())){
