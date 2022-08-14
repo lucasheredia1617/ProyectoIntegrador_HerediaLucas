@@ -6,6 +6,14 @@ div{
     background-color: #797979;
     text-align: center;
 }
+
+h4{
+    font-family: 'Space Mono', monospace;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+}
 /*estilo de la foto de perfil*/
 @media (min-width: 576px){
     #fotodeperfil{
