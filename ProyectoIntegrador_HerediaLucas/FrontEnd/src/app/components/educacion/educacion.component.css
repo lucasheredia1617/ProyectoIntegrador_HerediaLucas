@@ -1,6 +1,5 @@
 .row{
     padding: 20px;
-    font-family: 'Silkscreen', cursive;
 }
 
 div{
@@ -8,4 +7,12 @@ div{
 }
 h1,h3{
     display: inline;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+}
+
+.table{
+    font-family: 'Space Mono', monospace;
 }
