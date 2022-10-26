@@ -6,3 +6,9 @@
 h1 {
     font-family: 'Silkscreen', cursive;
 }
+
+.circulo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
